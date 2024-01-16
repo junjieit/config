@@ -1,0 +1,12 @@
+/*
+!.gitignore
+!/ags/
+!/nvim/
+!/hyper/
+!/waybar/
+!/sway/
+!/swaylock/
+!/i3/
+!/hypr/
+!/polybar/
+!/kitty/
