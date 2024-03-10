@@ -1,0 +1,6 @@
+; https://github.com/ErikReider/SwayNotificationCenter
+(defwidget motification []
+  (box :class "module" :space-evenly "false" :orientation "h" :spacing "3"
+    (button :onclick "swaync-client -t -sw" :tooltip "notifications"
+      (image :class "notification-icon" :path "bar/widgets/notification/notification.svg" :image-width 24 :image-height 24))
+  ))

@@ -1,0 +1,47 @@
+#!/bin/bash
+
+# EWW="$HOME/code/clone/eww/target/release/eww"
+EWW="$HOME/code/clone/eww/target/release/eww"
+ACTIVE_WINDOWS=$($HOME/code/clone/eww/target/release/eww active-windows)
+
+## Run eww daemon if not running already
+if [[ ! `pidof eww` ]]; then
+	${EWW} daemon
+	sleep 1
+fi
+
+## Open widgets 
+run_eww() {
+	${EWW} open-many \
+         bar
+}
+run_eww_debug() {
+	${EWW} --debug open-many \
+         bar
+}
+
+## Launch or close widgets accordingly
+# if [[ ! -f "$FILE" ]]; then
+# 	touch "$FILE"
+# 	run_eww
+# else
+# 	${EWW} close-all && killall eww
+# 	rm "$FILE"
+# fi
+
+
+if [[ "$1" == "--open" ]]; then
+	run_eww
+elif [[ "$1" == "--close" ]]; then
+	${EWW} close-all && killall eww
+elif [[ "$1" == "--debug" ]]; then
+	run_eww_debug
+elif [[ -n "$1" ]]; then
+	${EWW} "$1"
+else
+	if [[ $ACTIVE_WINDOWS == *"bar"* ]]; then
+    ${EWW} close-all && killall eww
+	else
+		run_eww
+	fi
+fi

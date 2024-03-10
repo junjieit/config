@@ -1,0 +1,35 @@
+@import "./bar/eww.scss";
+
+window.background.bar,
+button {
+  background-color: transparent;
+}
+
+* {
+  all: unset;
+  font-family: feather;
+  font-family: DaddyTimeMono NF;
+}
+
+/** tooltip!! **/
+tooltip.background {
+  background-color: $barBg;
+  font-size: 18;
+  border-radius: 10px;
+  color: #bfc9db;
+}
+
+tooltip label {
+  margin: 6;
+}
+
+/** scale **/
+scale trough {
+  all: unset;
+  background-color: #22242b;
+  box-shadow: 0 2px 3px 2px #06060b;
+  border-radius: 16px;
+  min-height: 10px;
+  min-width: 70px;
+  margin: 0px 10px 0px 0px;
+}

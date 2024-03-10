@@ -1,0 +1,16 @@
+.workspace-entry {
+  padding: 2px 6px;
+}
+.workspace-entry:first-child {
+  border-top-left-radius: $barRadius;
+  border-bottom-left-radius: $barRadius;
+}
+.workspace-entry:last-child {
+  margin-right: 8px;
+}
+.workspace-entry.current {
+  background-color: $active;
+}
+.workspace-entry.empty {
+  color: $textSecondary;
+}

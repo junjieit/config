@@ -1,0 +1,3 @@
+;;; https://elkowar.github.io/eww/configuration.html
+
+(include "./bar/eww.yuck")

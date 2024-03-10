@@ -1,0 +1,23 @@
+#!/bin/bash
+
+calendar() {
+EWW_BIN="$HOME/code/clone/eww/target/release/eww"
+ACTIVE_WINDOWS=$($HOME/code/clone/eww/target/release/eww active-windows)
+run() {
+    ${EWW_BIN} open calendar
+}
+
+# Open widgets
+if [[ $ACTIVE_WINDOWS == *"calendar"* ]]; then
+    ${EWW_BIN} close calendar
+    echo "closed"
+else
+    # ${EWW_BIN} close system music_win audio_ctl
+    run && echo "ok good!"
+fi
+}
+
+
+if [ "$1" = "calendar" ]; then
+calendar
+fi

@@ -1,0 +1,22 @@
+@import "./theme.scss";
+@import "./widgets/workspace/index.scss";
+@import "./widgets/music/index.scss";
+@import "./widgets/notification/index.scss";
+@import "./widgets/mem/index.scss";
+@import "./widgets/clock/index.scss";
+@import "./widgets/volume/index.scss";
+
+.bar_class {
+  background-color: $barBg;
+  border-radius: $barRadius;
+  color: $text;
+}
+
+image {
+  margin: 4px;
+}
+
+.module {
+  margin: 0px 0px 0px 0px;
+  border-radius: 10px 16px 0px 10px;
+}

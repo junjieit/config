@@ -1,0 +1,12 @@
+(defpoll memory :interval "15s" :initial 0 "bar/widgets/mem/memory")
+
+(defwidget mem []
+  (box :class "mem_module" :vexpand "false" :hexpand "false"
+    (box
+      :class "iconmem"
+      :tooltip "using ${memory}% ram"
+      (circular-progress :value memory
+        :class "membar"
+        :thickness 12
+      ))
+  ))

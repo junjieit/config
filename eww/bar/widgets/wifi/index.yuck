@@ -1,0 +1,15 @@
+(defpoll ESSID_WLAN :interval "1m" "bar/widgets/wifi/wifi --ESSID")
+(defpoll WLAN_ICON :interval "1m" "bar/widgets/wifi/wifi --ICON")
+(defvar wifi_rev false)
+
+(defwidget wifi []
+  (eventbox :onhover "${EWW_CMD} update wifi_rev=true"
+    :onhoverlost "${EWW_CMD} update wifi_rev=false"
+    (box :vexpand "false" :hexpand "false" :space-evenly "false"
+      (button :class "module-wif" :onclick "networkmanager_dmenu" (image :path "${WLAN_ICON}" :image-width 28 :image-height 28))
+      (revealer :transition "slideright"
+        :reveal wifi_rev
+        :duration "350ms"
+        (label    :class "module_essid"
+          :text ESSID_WLAN
+        )))))
