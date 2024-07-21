@@ -150,6 +150,8 @@ bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
+bindsym $mod+q kill
+
 # resize window (you can also use the mouse for that)
 mode "resize" {
         # These bindings trigger as soon as you enter the resize mode
@@ -193,13 +195,17 @@ bar {
 #登陆时 随机选择壁纸 ，~/Pictures/DesktopBackground 下要放几张图片
 # exec --no-startup-id feh --randomize --bg-fill ~/Pictures/DesktopBackground 
 # exec --no-startup-id swaybg -i $(find ~/Pictures/DesktopBackground/* -type f | shuf -n1) -m fill
-output "*" bg $(find ~/Pictures/DesktopBackground/* -type f | shuf -n1) fill
+output "*" bg $(find ~/Pictures/Wallpapers/* -type f | shuf -n1) fill
 # output "*" bg ~/Pictures/DesktopBackground/one.jpg fill
 
+exec --no-startup-id wl-paste --type text --watch cliphist store #Stores only text data
+exec --no-startup-id wl-paste --type image --watch cliphist store #Stores only image data
+exec --no-startup-id cliphist wipe
+exec --no-startup-id ~/.config/eww/bar/launch_bar
 # 登陆时启动polybar
-exec --no-startup-id  ~/.config/polybar/forest/launch.sh
+# exec --no-startup-id  ~/.config/polybar/forest/launch.sh
 #登录时启动fcitx
-exec_always fcitx5 -d 
+exec_always fcitx5 -d --replace
 # 登录时启动 keepassxc
 exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/keepassxc'
 # 登录时启动 终端
@@ -209,12 +215,14 @@ exec --no-startup-id i3-msg 'workspace 6; exec /usr/bin/keepassxc'
 # 登录时启动夜间保护 x.flux
 # exec --no-startup-id xflux -l 114.06667,22.61667
 #设置快捷程序启动为rofi
-# bindsym $mod+d exec --no-startup-id rofi -show drun
-bindsym $mod+d exec --no-startup-id ulauncher
+bindsym $mod+d exec --no-startup-id rofi -show drun
+# bindsym $mod+d exec --no-startup-id ulauncher
 # 绑定终端
-bindsym $mod+Return exec --no-startup-id konsole 
+bindsym $mod+Return exec --no-startup-id kitty 
 # 绑定截图
-bindsym Mod1+Ctrl+e exec --no-startup-id flameshot gui
+# bindsym Mod1+Ctrl+e exec --no-startup-id flameshot gui
+bindsym Mod1+Ctrl+e exec --no-startup-id grim -g "$(slurp)" - | swappy -f -
+# bindsym $mod+v exec --no-startup-id cliphist list | rofi -dmenu | cliphist decode | wl-copy
 # 设置 polybar
 # exec_always --no-startup-id ~/.config/polybar/launch.sh
 # 桌面通知
@@ -222,7 +230,7 @@ exec --no-startup-id dunst
 # 开启小键盘
 exec_always --no-startup-id numlockx on
 # 剪贴板管理器
-exec --no-startup-id copyq
+# exec --no-startup-id copyq
 
 # gps 设置
 gaps inner 12

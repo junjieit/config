@@ -6,6 +6,10 @@
 @import "./widgets/clock/index.scss";
 @import "./widgets/volume/index.scss";
 
+* {
+  all: unset;
+}
+
 .bar_class {
   background-color: $barBg;
   border-radius: $barRadius;

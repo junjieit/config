@@ -1,6 +1,6 @@
+
 (deflisten workspaces :initial "[]" "bash ~/.config/eww/bar/widgets/workspace/get-workspaces")
 (deflisten current_workspace :initial "1" "bash ~/.config/eww/bar/widgets/workspace/get-active-workspace")
-
 (defwidget workspaces []
   (eventbox :onscroll "bash ~/.config/eww/bar/widgets/workspace/change-active-workspace {} ${current_workspace}" :class "workspaces-widget"
     (box :space-evenly true
