@@ -1,0 +1,5 @@
+(defwidget tray[]
+  (box
+    (systray :spacing 8 :orientation "h")
+  )
+)

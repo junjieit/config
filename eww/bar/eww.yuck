@@ -7,6 +7,7 @@
 (include "./bar/widgets/mem/index.yuck")
 (include "./bar/widgets/clock/index.yuck")
 (include "./bar/widgets/notification/index.yuck")
+(include "./bar/widgets/systray/index.yuck")
 
 (defwidget right []
   (box :orientation "h"
@@ -19,6 +20,7 @@
     ; (sep)
     (mem)
     ; (sep)
+    (tray)
     (clock_module)
     (motification)))
 

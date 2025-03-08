@@ -3,7 +3,7 @@
 (defwidget weather []
   (box :class "module" :space-evenly "false" :orientation "h" :spacing "3"
     (image :path {weather_value?.weatherData?.icon} :image-width 28 :image-height 28)
-    (label :text "${weather_value?.weatherData?.temperature}°C, " :class "bright_icon")
-    (label :text {weather_value?.weatherData?.description} :class "bright_icon")
-    (label :text {weather_value?.forecastCompareText} :class "bright_icon")
+    (label :text "${weather_value?.weatherData?.temperature}°C, " :class "bright_icon small_text")
+    (label :text {weather_value?.weatherData?.description} :class "bright_icon small_text")
+    ; (label :text {weather_value?.forecastCompareText} :class "bright_icon small_text")
   ))

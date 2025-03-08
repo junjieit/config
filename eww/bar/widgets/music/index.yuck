@@ -11,7 +11,7 @@
     :onhoverlost "${EWW_CMD} update music_reveal=false"
     (box :class "module-2" :orientation "h" :space-evenly "false" :vexpand "false" :hexpand "false"
       (image :class "song_cover_art" :path cover_art :image-width 20 :image-height 20)
-      (button :class "song" :onclick "bar/scripts/pop music" (label :halign "center" :limit-width 30 :text song))
+      (button :class "song" :onclick "bar/scripts/pop music" (label :halign "center" :limit-width 20 :text song))
       (revealer :transition "slideright"
         :reveal music_reveal
         :duration "350ms"
