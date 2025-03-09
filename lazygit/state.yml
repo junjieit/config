@@ -1,0 +1,25 @@
+lastupdatecheck: 0
+recentrepos:
+    - /home/junjie/dodo/dodo-young
+    - /home/junjie/dodo/widgets-single-chain-template
+    - /home/junjie/dodo/widgets
+    - /home/junjie/dodo/taiko
+    - /home/junjie/dodo/contract-request
+    - /home/junjie/code/clone/eww
+    - /home/junjie/dodo/ton-defi
+    - /home/junjie/dodo/dodo-wallet
+    - /home/junjie/dodo/dodo-chain-docs
+    - /home/junjie/code/brisk-element
+    - /home/junjie/.config
+    - /home/junjie/code/markdown-prosemirror
+startuppopupversion: 5
+lastversion: 0.47.2
+customcommandshistory: []
+hidecommandlog: false
+ignorewhitespaceindiffview: false
+diffcontextsize: 3
+renamesimilaritythreshold: 50
+localbranchsortorder: recency
+remotebranchsortorder: alphabetical
+gitlogorder: topo-order
+gitlogshowgraph: always
