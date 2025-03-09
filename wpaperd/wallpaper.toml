@@ -1,0 +1,6 @@
+# https://github.com/danyspin97/wpaperd
+[default]
+path = "/home/junjie/Pictures/Wallpapers/"
+duration = "30m"
+apply-shadow = true
+sorting = "ascending"
