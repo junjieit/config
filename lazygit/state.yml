@@ -1,19 +1,23 @@
 lastupdatecheck: 0
 recentrepos:
+    - /home/junjie/.config
     - /home/junjie/dodo/dodo-young
-    - /home/junjie/dodo/widgets-single-chain-template
+    - /home/junjie/dodo/wasabee
     - /home/junjie/dodo/widgets
-    - /home/junjie/dodo/taiko
+    - /home/junjie/code/clone/honeypot_apps
     - /home/junjie/dodo/contract-request
+    - /home/junjie/dodo/rise
+    - /home/junjie/dodo/dodo-wallet
+    - /home/junjie/dodo/monad
+    - /home/junjie/dodo/widgets-single-chain-template
+    - /home/junjie/dodo/taiko
     - /home/junjie/code/clone/eww
     - /home/junjie/dodo/ton-defi
-    - /home/junjie/dodo/dodo-wallet
     - /home/junjie/dodo/dodo-chain-docs
     - /home/junjie/code/brisk-element
-    - /home/junjie/.config
     - /home/junjie/code/markdown-prosemirror
 startuppopupversion: 5
-lastversion: 0.47.2
+lastversion: 0.48.0
 customcommandshistory: []
 hidecommandlog: false
 ignorewhitespaceindiffview: false

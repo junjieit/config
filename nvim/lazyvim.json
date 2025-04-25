@@ -12,8 +12,9 @@
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.project"
   ],
+  "install_version": 7,
   "news": {
-    "NEWS.md": "6077"
+    "NEWS.md": "10960"
   },
-  "version": 6
+  "version": 8
 }
