@@ -1,27 +1,34 @@
 lastupdatecheck: 0
 recentrepos:
-    - /home/junjie/.config
     - /home/junjie/dodo/dodo-young
-    - /home/junjie/dodo/wasabee
+    - /home/junjie/.config
+    - /home/junjie/code/omni-stream
     - /home/junjie/dodo/widgets
-    - /home/junjie/code/clone/honeypot_apps
+    - /home/junjie/dodo/wasabee
     - /home/junjie/dodo/contract-request
-    - /home/junjie/dodo/rise
+    - /home/junjie/code/nativex-monorepo
+    - /home/junjie/dodo/pharos
+    - /home/junjie/dodo/nerochain
+    - /home/junjie/dodo/eden-website-frontend
+    - /home/junjie/dodo/momo
     - /home/junjie/dodo/dodo-wallet
+    - /home/junjie/dodo/rise
+    - /home/junjie/code/clone/honeypot_apps
     - /home/junjie/dodo/monad
     - /home/junjie/dodo/widgets-single-chain-template
-    - /home/junjie/dodo/taiko
     - /home/junjie/code/clone/eww
     - /home/junjie/dodo/ton-defi
     - /home/junjie/dodo/dodo-chain-docs
     - /home/junjie/code/brisk-element
     - /home/junjie/code/markdown-prosemirror
 startuppopupversion: 5
-lastversion: 0.48.0
-customcommandshistory: []
+lastversion: 0.53.0
+customcommandshistory:
+    - yarn workspace @dodoex/dodo-contract-request contract:generate
+    - git stash pop
 hidecommandlog: false
 ignorewhitespaceindiffview: false
-diffcontextsize: 3
+diffcontextsize: 2
 renamesimilaritythreshold: 50
 localbranchsortorder: recency
 remotebranchsortorder: alphabetical
