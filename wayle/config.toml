@@ -1,0 +1,203 @@
+[general]
+font-sans = "Inter"
+font-mono = "JetBrains Mono"
+
+[bar]
+location = "top"
+scale = 0.85
+padding = 0.25
+rounding = "sm"
+shadow = "sm"
+bg = "bg-surface"
+background-opacity = 95
+button-variant = "block-prefix"
+button-rounding = "sm"
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = ["hyprland-workspaces", "media"]
+center = ["clock"]
+right = ["systray", "notifications", "weather", "ram", "network", "bluetooth", "volume", "microphone", "dashboard"]
+
+[styling]
+scale = 1.0
+rounding = "sm"
+theme-provider = "wayle"
+
+[styling.palette]
+bg = "#141420"
+surface = "#1c1c2c"
+elevated = "#262638"
+fg = "#d4d6e8"
+fg-muted = "#8a8ca4"
+primary = "#e0947a"
+red = "#e46870"
+yellow = "#e0b870"
+green = "#68c898"
+blue = "#78a0e0"
+
+[modules]
+custom = []
+
+[modules.clock]
+format = "%a %b %d %H:%M"
+icon-name = "tb-calendar-time-symbolic"
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = true
+label-color = "green"
+left-click = "dropdown:calendar"
+right-click = "dropdown:weather"
+
+[modules.hyprland-workspaces]
+monitor-specific = true
+display-mode = "label"
+numbering = "absolute"
+active-indicator = "background"
+active-color = "green"
+occupied-color = "fg-muted"
+empty-color = "fg-subtle"
+container-bg-color = "bg-surface-elevated"
+
+[modules.media]
+format = "{{ title }} - {{ artist }}"
+label-max-length = 30
+label-show = false
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-color = "green"
+left-click = "dropdown:media"
+
+[modules.systray]
+icon-scale = 1.0
+item-gap = 0.25
+
+[modules.notifications]
+icon-name = "ld-bell-symbolic"
+icon-unread = "ld-bell-dot-symbolic"
+icon-dnd = "ld-bell-off-symbolic"
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "blue"
+label-show = true
+label-color = "blue"
+left-click = "dropdown:notification"
+right-click = "wayle notify dnd"
+
+[modules.network]
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = false
+left-click = "dropdown:network"
+
+[modules.bluetooth]
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = false
+left-click = "dropdown:bluetooth"
+
+[modules.volume]
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = false
+format = "{{ percent }}%"
+left-click = "dropdown:audio"
+middle-click = "wayle audio output-mute"
+
+[modules.microphone]
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = false
+left-click = "dropdown:audio"
+middle-click = "wayle audio input-mute"
+
+[modules.weather]
+provider = "weather-api"
+weatherapi-key = "$WEATHERAPI_KEY"
+location = "Shenzhen, China"
+units = "metric"
+format = "{{ temp }}{{ temp_unit }}"
+time-format = "24h"
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "blue"
+label-show = true
+label-color = "blue"
+left-click = "dropdown:weather"
+
+[modules.cpu]
+format = "{{ percent }}%"
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = true
+label-color = "green"
+
+[modules.ram]
+format = "{{ percent }}%"
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "blue"
+label-show = true
+label-color = "blue"
+
+[modules.keyboard-input]
+format = "{{ alias }}"
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = true
+label-color = "yellow"
+
+[modules.hyprsunset]
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = false
+left-click = ":toggle"
+
+[modules.idle-inhibit]
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "green"
+label-show = false
+left-click = "wayle idle toggle --indefinite"
+right-click = "wayle idle toggle"
+
+[modules.netstat]
+format = "{{ down_auto }} {{ up_auto }}"
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "blue"
+label-show = true
+label-color = "blue"
+
+[modules.keybind-mode]
+format = "{{ mode }}"
+auto-hide = true
+icon-show = true
+icon-color = "auto"
+icon-bg-color = "yellow"
+label-show = true
+label-color = "yellow"
+
+[modules.dashboard]
+icon-bg-color = "red"
+icon-color = "auto"
+left-click = "dropdown:dashboard"
+
+[osd]
+enabled = true
+position = "bottom"
+duration = 2500
+monitor = "primary"
+
+[wallpaper]
+engine-enabled = false

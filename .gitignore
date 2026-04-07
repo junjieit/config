@@ -2,6 +2,7 @@
 !.gitignore
 !/eww/
 !/nvim/
+nvim/lazy-lock.json
 !/hyper/
 !/waybar/
 !/sway/
@@ -14,3 +15,11 @@
 !lazygit/
 !fcitx5/
 !wezterm/
+!mpd/
+!wayle/
+!opencode/
+!neovide/
+!gtk-3.0/
+!gtk-4.0/
+!himalaya/
+!.claude/

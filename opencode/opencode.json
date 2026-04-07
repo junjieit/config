@@ -1,0 +1,64 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "cdp-devtools": {
+      "command": [
+        "npx",
+        "-y",
+        "cdp-tools-mcp@latest"
+      ],
+      "enabled": false,
+      "type": "local"
+    },
+    "chrome-devtools": {
+      "command": [
+        "npx",
+        "-y",
+        "chrome-devtools-mcp@latest",
+        "--autoConnect"
+      ],
+      "enabled": true,
+      "type": "local"
+    },
+    "openpencil": {
+      "enabled": true,
+      "type": "remote",
+      "url": "http://localhost:3100/mcp"
+    },
+    "penpot": {
+      "enabled": true,
+      "type": "remote",
+      "url": "http://localhost:4401/mcp"
+    },
+    "predictradar": {
+      "enabled": true,
+      "headers": {
+        "X-API-Key": "pr_public_predictradar"
+      },
+      "type": "remote",
+      "url": "https://api.predictradar.ai/api/mcp/v2"
+    }
+  },
+  "permission": {
+    "external_directory": {
+      "/tmp/**": "allow"
+    }
+  },
+  "plugin": [
+    "@different-ai/opencode-browser"
+  ],
+  "provider": {
+    "yescode": {
+      "models": {
+        "claude-sonnet-4-5-20250929": {
+          "name": "Claude Sonnet 4.5"
+        }
+      },
+      "options": {
+        "baseURL": "https://co.yes.vg",
+        "name": "YesCode",
+        "npm": "@ai-sdk/openai-compatible"
+      }
+    }
+  }
+}

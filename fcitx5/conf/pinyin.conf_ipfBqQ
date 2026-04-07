@@ -2,13 +2,13 @@
 ShuangpinProfile=Ziranma
 # Show current shuangpin mode
 ShowShuangpinMode=True
-# Candidates Per Page
+# Page size
 PageSize=7
-# Show English Candidates
+# Enable Spell
 SpellEnabled=True
-# Show symbol candidates
+# Enable Symbols
 SymbolsEnabled=True
-# Show Chaizi candidates
+# Enable Chaizi
 ChaiziEnabled=True
 # Enable more Characters after Unicode CJK Extension B
 ExtBEnabled=True
@@ -16,7 +16,7 @@ ExtBEnabled=True
 StrokeCandidateEnabled=True
 # Enable Cloud Pinyin
 CloudPinyinEnabled=True
-# Cloud Pinyin Candidate Order
+# Cloud Pinyin Index
 CloudPinyinIndex=2
 # Show animation when Cloud Pinyin is loading
 CloudPinyinAnimation=True
@@ -27,20 +27,16 @@ PreeditMode="Composing pinyin"
 # Fix embedded preedit cursor at the beginning of the preedit
 PreeditCursorPositionAtBeginning=True
 # Show complete pinyin in preedit
-PinyinInPreedit=True
+PinyinInPreedit=False
 # Enable Prediction
 Prediction=False
-# Keep the current typed text for next input prediction
-KeepCurrentContext=True
-# Number of Predictions
+# Prediction Size
 PredictionSize=49
-# Backspace behavior on prediction
-BackspaceBehaviorOnPrediction="Backspace when not using on-screen keyboard"
 # Action when switching input method
 SwitchInputMethodBehavior="Commit current preedit"
-# Select Second Candidate
+# Select 2nd Candidate
 SecondCandidate=
-# Select Third Candidate
+# Select 3rd Candidate
 ThirdCandidate=
 # Use Keypad as Selection key
 UseKeypadAsSelection=False
@@ -48,8 +44,6 @@ UseKeypadAsSelection=False
 BackSpaceToUnselect=True
 # Number of Sentences
 Number of sentence=2
-# Number of Phrase Candidates
-WordCandidateLimit=16
 # Prompt long word length when input length over (0 for disable)
 LongWordLengthLimit=4
 # Key to trigger quickphrase
