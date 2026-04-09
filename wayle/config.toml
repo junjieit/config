@@ -18,7 +18,7 @@ monitor = "*"
 show = true
 left = ["hyprland-workspaces", "media"]
 center = ["clock"]
-right = ["systray", "notifications", "weather", "ram", "network", "bluetooth", "volume", "microphone", "dashboard"]
+right = ["systray", "notifications", "weather", "ram", "network", "bluetooth", "volume", "microphone", "battery", "dashboard"]
 
 [styling]
 scale = 1.0

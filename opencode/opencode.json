@@ -7,7 +7,7 @@
         "-y",
         "cdp-tools-mcp@latest"
       ],
-      "enabled": false,
+      "enabled": true,
       "type": "local"
     },
     "chrome-devtools": {
