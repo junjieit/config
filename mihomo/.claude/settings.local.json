@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:github.com)",
+      "Bash(subconverter --help)",
+      "Bash(curl -sL https://api.github.com/repos/tindy2013/subconverter/releases/latest)",
+      "Bash(curl -sL https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_linux_amd64.tar.gz -o /tmp/subconverter.tar.gz)",
+      "Bash(tar -xzf /tmp/subconverter.tar.gz -C /tmp)",
+      "Bash(chmod +x /tmp/subconverter)",
+      "Bash(/tmp/subconverter --help)",
+      "Bash(curl:*)",
+      "Bash(docker --version)",
+      "Bash(docker pull:*)",
+      "Bash(sudo docker:*)",
+      "Bash(apt-cache search:*)",
+      "Bash(go version:*)",
+      "Bash(git clone:*)",
+      "Read(//tmp/subconverter/**)",
+      "Bash(go build:*)",
+      "Bash(go mod:*)",
+      "Bash(cp /tmp/subconverter/pref.example.ini /tmp/subconverter/pref.ini)",
+      "Bash(timeout 10 ./subconverter -i \"https://acsub.kyapi.xyz/?sid=207471&uid=66831&token=QUMzOUVJcjZEK3JhczVMNGhja3VyQ2FsL0ZXMzZsU3NDTFhJV1dZWXJQTT0&app=auto\" -o /tmp/test.yaml -p clash -f yaml)"
+    ]
+  }
+}
