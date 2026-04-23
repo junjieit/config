@@ -7,7 +7,7 @@
         "-y",
         "cdp-tools-mcp@latest"
       ],
-      "enabled": true,
+      "enabled": false,
       "type": "local"
     },
     "chrome-devtools": {
@@ -20,23 +20,18 @@
       "enabled": true,
       "type": "local"
     },
-    "openpencil": {
-      "enabled": true,
-      "type": "remote",
-      "url": "http://localhost:3100/mcp"
-    },
     "penpot": {
-      "enabled": true,
       "type": "remote",
-      "url": "http://localhost:4401/mcp"
+      "url": "http://localhost:4401/mcp",
+      "enabled": false
     },
     "predictradar": {
-      "enabled": true,
+      "type": "remote",
+      "url": "https://api.predictradar.ai/api/mcp/v2",
       "headers": {
         "X-API-Key": "pr_public_predictradar"
       },
-      "type": "remote",
-      "url": "https://api.predictradar.ai/api/mcp/v2"
+      "enabled": false
     }
   },
   "permission": {

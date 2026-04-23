@@ -1,3 +1,6 @@
 rules:
     - DOMAIN-SUFFIX,claude.com,🔰 节点选择
     - DOMAIN-SUFFIX,claude.ai,🔰 节点选择
+    - "DOMAIN-SUFFIX,yes.vg,\U0001F3AF 全球直连"
+    - "DOMAIN-SUFFIX,openrouter.icu,\U0001F3AF 全球直连"
+    - "DOMAIN-SUFFIX,bigmodel.cn,\U0001F3AF 全球直连"
