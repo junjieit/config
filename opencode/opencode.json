@@ -20,18 +20,23 @@
       "enabled": true,
       "type": "local"
     },
-    "penpot": {
+    "openpencil": {
+      "enabled": true,
       "type": "remote",
-      "url": "http://localhost:4401/mcp",
-      "enabled": false
+      "url": "http://localhost:3100/mcp"
+    },
+    "penpot": {
+      "enabled": true,
+      "type": "remote",
+      "url": "http://localhost:4401/mcp"
     },
     "predictradar": {
-      "type": "remote",
-      "url": "https://api.predictradar.ai/api/mcp/v2",
+      "enabled": true,
       "headers": {
         "X-API-Key": "pr_public_predictradar"
       },
-      "enabled": false
+      "type": "remote",
+      "url": "https://api.predictradar.ai/api/mcp/v2"
     }
   },
   "permission": {
@@ -43,6 +48,42 @@
     "@different-ai/opencode-browser"
   ],
   "provider": {
+    "rehdasu": {
+      "models": {
+        "gpt-5.5": {
+          "name": "gpt-5.5"
+        }
+      },
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "apiKey": "sk-59631ef75950048aa54700b7f6990bcc3fe65d7aa7380c6e9ab9e49068466b2d",
+        "baseURL": "https://rehdasu.cn"
+      }
+    },
+    "taobao": {
+      "models": {
+        "gemini-3.1-pro-preview": {
+          "name": "gemini-3.1-pro-preview"
+        }
+      },
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "apiKey": "sk-x8kiWsJv9t4iJ2aF77p6CjESgO8lATWZ58anKklfp94hMjUz",
+        "baseURL": "https://api.vectorengine.ai/v1"
+      }
+    },
+    "xiaomi": {
+      "models": {
+        "mimo-v2.5-pro": {
+          "name": "mimo-v2.5-pro"
+        }
+      },
+      "npm": "@ai-sdk/openai-compatible",
+      "options": {
+        "apiKey": "tp-cg4xk9dqswsj3c048y9da7u2rm66xcl4cwgxoix9hv9owdmq",
+        "baseURL": "https://token-plan-cn.xiaomimimo.com/v1"
+      }
+    },
     "yescode": {
       "models": {
         "claude-sonnet-4-5-20250929": {
